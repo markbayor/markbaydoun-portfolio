@@ -5,6 +5,8 @@
   margin-top: 2rem;
   padding: 1rem 2rem;
 }
+/////////////////////////////////////////////
+////// INTRO
 
 .introduction {
 
@@ -16,6 +18,9 @@
     letter-spacing: .6px;
   }
 }
+
+/////////////////////////////////////////////
+////// PROJECTS  
 
 .projects {
   display: flex;
@@ -52,7 +57,7 @@
     animation: moveInBottom 2s ease;
 
     &-paragraph {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       text-align: justify;
     }
 
@@ -69,6 +74,9 @@
   }
 }
 
+/////////////////////////////////////////////
+////// EDUCATION
+
 .edu {
   &__list {
     list-style: none;
@@ -78,10 +86,11 @@
     margin: 2rem 0rem;
     padding: 2rem 1rem;
     border-radius: 3px;
-    background-image: linear-gradient(to bottom, rgba($color-grey-light-3, .5), rgba($color-grey-dark, .3));
+    background-image: linear-gradient(to bottom, rgba($color-grey-light-3, .5), rgba($color-grey-dark, .15));
     transition: all .2s;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(black, .1);
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 .5rem 2rem rgba(black, .3);
@@ -119,5 +128,36 @@
 
   &__description {
     font-size: 1.8rem;
+  }
+}
+
+
+/////////////////////////////////////////////
+////// TECH
+
+.technologies {
+
+}
+
+.tech {
+  &__container {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+  }
+
+  &__section {
+    padding: 2rem 4rem;
+
+    border-radius: 3px;
+  }
+
+  &__list {
+    list-style: none;
+    column-count: 4;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 }

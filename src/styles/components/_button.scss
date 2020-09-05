@@ -1,4 +1,33 @@
+@import '../abstracts/variables';
+
 .btn {
   text-decoration: none;
   color: inherit;
+
+  &-contact {
+    height: 3rem;
+    width: 12rem;
+    border-radius: 3px;
+    align-self: center;
+    margin-top: 1rem;
+    background-color: $color-grey-dark-6;
+    border: none;
+    color: $color-grey-light;
+    font-size: 1.7rem;
+    transition: all .5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-grey-light;
+      color: $color-grey-dark-6;
+    }
+  }
+
+  &-close {
+    font-size: 10rem;
+    position: absolute;
+    top: -4rem;
+    right: 2rem;
+    cursor: pointer;
+  }
 }

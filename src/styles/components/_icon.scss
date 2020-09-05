@@ -17,4 +17,10 @@
     width: inherit;
     z-index: 5;
   }
+
+  &__small {
+    height: 3.5rem;
+    width: 3.5rem;
+    fill: black;
+  }
 }

@@ -18,7 +18,6 @@ import DockerIcon from './docker-icon.svg';
 import ExpoIcon from './expo.svg'
 import GmapsIcon from './google-maps.svg';
 import SocketIcon from './socketio.svg';
-
 import AntdIcon from './ant-design.svg';
 import BabelIcon from './babel.svg';
 import ElectronIcon from './electron.svg';
@@ -27,6 +26,10 @@ import JavascriptIcon from './javascript.svg';
 import PassportIcon from './passport.svg';
 import ReduxIcon from './redux.svg';
 import WebpackIcon from './webpack.svg';
+import GithubIcon from './github-icon.svg';
+import LinkedinIcon from './linkedin.svg';
+import LinkedinIconSmall from './linkedin-small.svg';
+import MailIcon from './mail.svg';
 
 export {
   NodeIcon,
@@ -56,5 +59,9 @@ export {
   JavascriptIcon,
   PassportIcon,
   ReduxIcon,
-  WebpackIcon
+  WebpackIcon,
+  GithubIcon,
+  LinkedinIcon,
+  LinkedinIconSmall,
+  MailIcon
 }

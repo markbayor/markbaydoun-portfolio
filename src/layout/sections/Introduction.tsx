@@ -7,8 +7,9 @@ const Introduction = () => {
       <hr className="hr" />
       <div className="introduction">
         <p className="introduction__paragraph">
-          I'm a Junior Software Engineer based in Vilanova i la Geltrú, in the province of Barcelona, Spain. A roommate from my time in New York in 2019-2020 introduced me to software engineering, and I enrolled to Fullstack Academy's Immersive Program.
-          After a very (VERY) intensive period, I've improved my skills more than I ever imagined. I'm always looking for the next challenge.
+          I'm a Junior Software Engineer based in Vilanova i la Geltrú, in the province of Barcelona, Spain. I enrolled to Fullstack Academy's Immersive Program
+          after a roommate from my time in New York introduced me to software engineering.
+          I've honed and developed my skills a lot since then, and am looking for the next challenge/s to do so even more.
           </p>
       </div>
     </section>
