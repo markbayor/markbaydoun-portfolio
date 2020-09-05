@@ -1,0 +1,17 @@
+.span {
+  &--highlight {
+    color: inherit;
+    background-color: inherit;
+    transition: all .5s;
+    // background-image: linear-gradient(to right, transparent 0%, transparent 50%, $color-grey-dark-6 50%);
+    background-image: linear-gradient(to left, rgba($color-grey-dark-6, .95) 50%, transparent 50%, transparent 0%);
+    background-size: 200%;
+    line-height: 1.3;
+
+    &:hover {
+      color: $color-grey-light;
+      background-position: -100%;
+      // box-shadow: 0 .5rem 2rem rgba(black, .5);
+    }
+  }
+}

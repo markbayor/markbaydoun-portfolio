@@ -1,0 +1,27 @@
+@import '../abstracts/variables';
+
+.header {
+  height: 85vh;
+  border-radius: 2px;
+
+  background-image: 
+  // linear-gradient(to right bottom, 
+  // rgba($color-grey-dark, .2), 
+  // rgba($color-grey-dark-2, .2)), 
+  url('/keyboard-bg-4.jpg');
+  background-size: 102%;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: zoomBackgroundSlightly 5s cubic-bezier(0.61, 1, 0.88, 1);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+  display: flex;
+  
+
+  &__text-box {
+    padding: 1rem 3rem;
+    padding-left: 4rem;
+    flex: 0 0 50%;
+    transform: translateY(3rem);
+  }
+}
