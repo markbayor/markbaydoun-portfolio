@@ -1,0 +1,46 @@
+@import '../abstracts/variables';
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  z-index: 200;
+
+  border-top: solid 1px $color-grey-light;
+  border-bottom: solid 1px $color-grey-light;
+  position: sticky;
+  top: 0;
+
+  background-color: rgb(249, 249, 249);
+  box-shadow: 0 .3rem .5rem rgba(black, .1);
+
+  &__btn {
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      text-decoration: none;
+      color: inherit;
+      padding: 1rem 3rem;
+      transition: all .3s;
+      font-weight: 600;
+
+      &:not(:last-child) {
+        border-right: solid 1px $color-grey-dark;
+      }
+
+      &:hover {
+        color: $color-grey-light;
+        background-color: $color-grey-dark-6;
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+
+    }
+  }
+}
