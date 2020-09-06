@@ -3,10 +3,6 @@ import { GithubIcon, LinkedinIconSmall } from '../assets';
 
 const Navbar = ({ setShow }: any) => {
 
-  console.log('WINDOW', window.scrollTo())
-  console.log('location', document.location)
-
-
   return (
     <nav className='nav'>
       <div>

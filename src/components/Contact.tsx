@@ -1,8 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GithubIcon, LinkedinIconSmall, MailIcon } from '../assets';
-
+import emailjs, { init } from 'emailjs-com';
+init(process.env.EMAILJS_ID);
 
 const Contact = ({ setShow }: any) => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const [loading, setLoading] = useState(false)
+
+  function onSubmit() {
+    if (name && email && message) {
+      emailjs.send("service_zaktz87", "template_enmszxe", {
+        "from_name": name,
+        "from_email": email,
+        "reply_to": email,
+        message
+      }).then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        setTimeout(() => {
+          setName('')
+          setEmail('')
+          setMessage('')
+          setShow(false)
+        }, 5000)
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
+    }
+  }
+
   return (
     <div className="contact__bg">
       <div className="contact__content">
@@ -17,11 +45,12 @@ const Contact = ({ setShow }: any) => {
           </div>
           <div className="contact__content-right">
             <h3 className="heading--tertiary">Or directly</h3>
-            <form action="" className="contact__form">
-              <input placeholder='Your name' type="text" className="contact__form-input" />
-              <input placeholder='Your e-mail' type="email" className="contact__form-input" />
-              <textarea placeholder='Your message...' className="contact__form-input" />
-              <button className="btn btn-contact">Send</button>
+            <form action="" className="contact__form" onSubmit={e => e.preventDefault()}>
+              <input placeholder='Your name' type="text" className="contact__form-input" value={name} onChange={(e => setName(e.target.value))} required />
+              <input placeholder='Your e-mail' type="email" className="contact__form-input" value={email} onChange={(e => setEmail(e.target.value))} required />
+              <textarea placeholder='Your message...' className="contact__form-input" value={message} onChange={(e => setMessage(e.target.value))} required />
+              <button className="btn btn-contact" onClick={onSubmit} >Send</button>
+              {loading && <h4 className="heading--quaternary">Sending</h4>}
             </form>
           </div>
         </div>
