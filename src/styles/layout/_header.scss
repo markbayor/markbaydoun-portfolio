@@ -24,6 +24,10 @@
     background-position: center;
   }
 
+  @media only screen and (max-width: $bp-phone-small) {
+    background-size: 220%;
+  }
+
   &__text-box {
     padding: 1rem 3rem;
     padding-left: 4rem;

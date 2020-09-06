@@ -22,6 +22,12 @@ body {
     box-sizing: border-box;
 }
 
+.home {
+    // @media only screen and (max-width: $bp-phone-small) {
+    //     width: 100%;
+    // }
+}
+
 .a__link {
     &:link,
     &:visited {
