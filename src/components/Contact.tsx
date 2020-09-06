@@ -21,12 +21,10 @@ const Contact = ({ setShow }: any) => {
       }).then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
         setLoading(false)
-        setTimeout(() => {
-          setName('')
-          setEmail('')
-          setMessage('')
-          setShow(false)
-        }, 5000)
+        setName('')
+        setEmail('')
+        setMessage('')
+        setShow(false)
       }, function (error) {
         console.log('FAILED...', error);
       });
@@ -38,7 +36,7 @@ const Contact = ({ setShow }: any) => {
       <div className="contact__bg" onClick={() => setShow(false)}></div>
       <div className="contact__content">
         <div className="btn-close" onClick={() => setShow(false)}>&times;</div>
-        <h1 className="heading--secondary">Contact me</h1>
+        <h1 className="heading--secondary">Contact</h1>
         <div className="contact__content-container">
           <div className="contact__content-left">
             <h3 className="heading--tertiary">You can find me on..</h3>
@@ -52,8 +50,7 @@ const Contact = ({ setShow }: any) => {
               <input placeholder='Your name' type="text" className="contact__form-input" value={name} onChange={(e => setName(e.target.value))} required />
               <input placeholder='Your e-mail' type="email" className="contact__form-input" value={email} onChange={(e => setEmail(e.target.value))} required />
               <textarea placeholder='Your message...' className="contact__form-input--big" value={message} onChange={(e => setMessage(e.target.value))} required />
-              <button className="btn btn-contact" onClick={onSubmit} >Send</button>
-              {loading && <h4 className="heading--quaternary">Sending</h4>}
+              {loading ? <h4 className="heading--quaternary sending">Sending...</h4> : <button className="btn btn-contact" onClick={onSubmit} >Send</button>}
             </form>
           </div>
         </div>
