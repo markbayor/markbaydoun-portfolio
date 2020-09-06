@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    'gatsby-plugin-sharp',
     `gatsby-plugin-sass`,
     'gatsby-plugin-react-svg',
     'gatsby-plugin-react-helmet',
