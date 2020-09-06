@@ -75,6 +75,36 @@
 }
 
 /////////////////////////////////////////////
+////// TECH
+
+.technologies {
+
+}
+
+.tech {
+  &__container {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+  }
+
+  &__section {
+    padding: 2rem 4rem;
+
+    border-radius: 3px;
+  }
+
+  &__list {
+    list-style: none;
+    column-count: 4;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+/////////////////////////////////////////////
 ////// EDUCATION
 
 .edu {
@@ -133,31 +163,64 @@
 
 
 /////////////////////////////////////////////
-////// TECH
+////// INTERESTS
 
-.technologies {
 
+/////////////////////////////////////////////
+////// RESUME
+
+.section__resume > h4 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
-.tech {
+
+.resume {
+
+
+
   &__container {
-    padding: 1rem 2rem;
-    border-radius: 3px;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
-  &__section {
-    padding: 2rem 4rem;
+  &__preview {
+    position: fixed;
+    height: 70%;
+    width: 50%;
+    z-index: 999999999;
+    top: 15%;
+    left: 20%;
+    border-radius: 2px;
+  }
+}
 
-    border-radius: 3px;
+.btn--download {
+  font-size: 2.5rem;
+  padding: 2rem 4rem;
+  margin: 1rem;
+  margin-top: 0;
+  color: $color-grey-light;
+  background-color: rgba($color-link-blue, .8);
+  border-radius: 3px;
+  box-shadow: 0 .5rem .9rem rgba(black, .2);
+  transition: all .3s;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 .5rem 1rem rgba(black, .4);
+    background-color: rgba($color-link-blue, .9);
   }
 
-  &__list {
-    list-style: none;
-    column-count: 4;
-  }
-
-  &__item {
-    font-size: 1.6rem;
-    font-weight: 500;
+  &:active {
+    transform: translateY(-2px);
+    box-shadow: 0 .4rem .8rem rgba(black, .3);
+    background-color: rgba($color-link-blue, 1);
   }
 }

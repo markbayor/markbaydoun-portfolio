@@ -9,7 +9,7 @@ const Introduction = () => {
         <p className="introduction__paragraph">
           I'm a Junior Software Engineer based in Vilanova i la Geltrú, in the province of Barcelona, Spain. I enrolled to Fullstack Academy's Immersive Program
           after a roommate from my time in New York introduced me to software engineering.
-          I've honed and developed my skills a lot since then, and am looking for the next challenge/s to do so even more.
+          I keep improving all the time, so I look forward to the next challenges that come.
           </p>
       </div>
     </section>

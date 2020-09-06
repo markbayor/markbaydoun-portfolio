@@ -11,7 +11,8 @@ const Contact = ({ setShow }: any) => {
   const [loading, setLoading] = useState(false)
 
   function onSubmit() {
-    if (name && email && message) {
+    if (name.length && email.length && message.length) {
+      setLoading(true)
       emailjs.send("service_zaktz87", "template_enmszxe", {
         "from_name": name,
         "from_email": email,
@@ -19,6 +20,7 @@ const Contact = ({ setShow }: any) => {
         message
       }).then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
+        setLoading(false)
         setTimeout(() => {
           setName('')
           setEmail('')
@@ -33,6 +35,7 @@ const Contact = ({ setShow }: any) => {
 
   return (
     <div className="contact__bg">
+      <div className="contact__bg" onClick={() => setShow(false)}></div>
       <div className="contact__content">
         <div className="btn-close" onClick={() => setShow(false)}>&times;</div>
         <h1 className="heading--secondary">Contact me</h1>
@@ -48,7 +51,7 @@ const Contact = ({ setShow }: any) => {
             <form action="" className="contact__form" onSubmit={e => e.preventDefault()}>
               <input placeholder='Your name' type="text" className="contact__form-input" value={name} onChange={(e => setName(e.target.value))} required />
               <input placeholder='Your e-mail' type="email" className="contact__form-input" value={email} onChange={(e => setEmail(e.target.value))} required />
-              <textarea placeholder='Your message...' className="contact__form-input" value={message} onChange={(e => setMessage(e.target.value))} required />
+              <textarea placeholder='Your message...' className="contact__form-input--big" value={message} onChange={(e => setMessage(e.target.value))} required />
               <button className="btn btn-contact" onClick={onSubmit} >Send</button>
               {loading && <h4 className="heading--quaternary">Sending</h4>}
             </form>
