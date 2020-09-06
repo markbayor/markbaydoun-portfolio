@@ -1,13 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 
 const Resume = () => {
+  const [show, setShow] = useState(false)
 
   return (
     <section className="section section__resume">
       <h3 className='heading--tertiary' id='resume'>Resume</h3>
       <hr className="hr" />
-      <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/u/2/uc?id=1lF2LOof8EmVrELVUIUDdutIbXRqM5OWn&export=download" className="btn--download">Download</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1lF2LOof8EmVrELVUIUDdutIbXRqM5OWn/view?usp=sharing" className="btn--download">Check it out on Google Drive</a>
+      <h4 className="heading--quaternary">To view or download my resume, use one of the three buttons below.</h4>
+      <div className="resume__container">
+        <a href='#' onClick={() => setShow(true)} className="btn btn--download">Preview here</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/u/2/uc?id=1lF2LOof8EmVrELVUIUDdutIbXRqM5OWn&export=download" className="btn btn--download">Download</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1lF2LOof8EmVrELVUIUDdutIbXRqM5OWn/view?usp=sharing" className="btn btn--download">View on Google Drive</a>
+        {show && <div className="resume__preview--container">
+          <div className="contact__bg" onClick={() => setShow(false)}>
+            <div className="contact__bg" onClick={() => setShow(false)}></div>
+            <iframe className='resume__preview' src="https://drive.google.com/file/d/1lF2LOof8EmVrELVUIUDdutIbXRqM5OWn/preview" ></iframe>
+          </div>
+        </div>}
+      </div>
     </section>
   )
 }
