@@ -17,6 +17,33 @@
   background-color: rgb(249, 249, 249);
   box-shadow: 0 .3rem .5rem rgba(black, .1);
 
+  @media only screen and (max-width: $bp-phone) {
+    position: inherit;
+    flex-direction: column;
+
+    &--2 {
+      visibility: hidden;
+      height: 0;
+    }
+
+    &__social {
+      & > .nav__btn {
+        font-size: 3.5rem;
+      }
+
+      .a__link {
+        svg {
+          height: 4.5rem;
+          width: 4.5rem;
+          margin-left: 5rem;
+        }
+      }
+    }
+
+  }
+
+
+
   &__btn {
     &:link,
     &:visited {

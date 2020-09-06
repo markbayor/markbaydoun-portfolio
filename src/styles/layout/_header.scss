@@ -18,10 +18,24 @@
   display: flex;
   
 
+  @media only screen and (max-width: $bp-phone) {
+    height: auto;
+    background-size: 180%;
+    background-position: center;
+  }
+
   &__text-box {
     padding: 1rem 3rem;
     padding-left: 4rem;
     flex: 0 0 50%;
     transform: translateY(3rem);
+
+    @media only screen and (max-width: $bp-phone) {
+      transform: translateY(1rem);
+      .heading--secondary {
+        max-width: 80%;
+        border: none;
+      }
+    }
   }
 }

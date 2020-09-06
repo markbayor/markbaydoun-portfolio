@@ -12,3 +12,73 @@ $color-grey-dark-5: rgb(56, 56, 56);
 $color-grey-dark-6: rgb(31, 31, 31);
 
 $color-link-blue: rgb(0, 136, 255);
+
+
+
+///////////////////////////////////////////////
+///// BREAKPOINTS
+
+$bp-largest: 68.75em; // 1100px
+
+$bp-phone: 26.5em; // Iphone X
+$bp-phone-small: 21em; // Smaller phone
+
+/* MOBILE 
+  > 400px home width none
+  < 400px home width = 101%
+  < 375px home width = none
+  < 350px home width = 106%
+  < 320px home width = 110%
+
+
+  header:
+    height none
+    font-size: 35%
+    bg-size: 180%;
+    bg-position: center;
+    heading--secondary {
+      max-width 80%;
+      no border
+    }
+    text-box {
+      translateY 1 rem
+    }
+
+
+
+    project {
+      flex-direction: column
+      ******SECOND PROJECT COLUMN-REVERSE
+    }
+
+
+    edu_item {
+     display block
+    }
+
+    resume-container {
+      padding-bottom: 1
+    }
+
+    nav {
+      no position sticky
+      nav div 2 visibility hidden height 0
+
+      contact nav__btn font-size 3.5rem
+
+      icon__small height width 4.5rem
+      .icon margin-left 5rem
+    }
+
+    contact__content-container {
+      flex-direction: column
+    }
+
+    resume__preview {
+      height: 62%
+      width: 105%
+      top: 50%
+      left: 45%
+      transform translate -50% -50%
+    }
+*/
