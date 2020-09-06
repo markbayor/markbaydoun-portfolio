@@ -41,13 +41,13 @@ const Contact = ({ setShow }: any) => {
         <h1 className="heading--secondary">Contact me</h1>
         <div className="contact__content-container">
           <div className="contact__content-left">
-            <h3 className="heading--tertiary">You can find me on</h3>
+            <h3 className="heading--tertiary">You can find me on..</h3>
             <a href="https://github.com/markbayor" target="_blank" rel="noopener noreferrer" className="a__link contact__content-link"><GithubIcon className='icon icon__small' /> Github profile</a>
             <a href="https://www.linkedin.com/in/markbayor/" target="_blank" rel="noopener noreferrer" className="a__link contact__content-link"><LinkedinIconSmall className='icon icon__small' />LinkedIn profile</a>
             <a href="#" className="a__link contact__content-link"><MailIcon className='icon icon__small' />mark@markbaydoun.dev</a>
           </div>
           <div className="contact__content-right">
-            <h3 className="heading--tertiary">Or directly</h3>
+            <h3 className="heading--tertiary">or message me:</h3>
             <form action="" className="contact__form" onSubmit={e => e.preventDefault()}>
               <input placeholder='Your name' type="text" className="contact__form-input" value={name} onChange={(e => setName(e.target.value))} required />
               <input placeholder='Your e-mail' type="email" className="contact__form-input" value={email} onChange={(e => setEmail(e.target.value))} required />
