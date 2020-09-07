@@ -22,9 +22,11 @@
     height: auto;
     background-size: 180%;
     background-position: center;
+    animation: zoomBackgroundSlightlyPhone 5s cubic-bezier(0.61, 1, 0.88, 1);
   }
 
   @media only screen and (max-width: $bp-phone-small) {
+    animation: zoomBackgroundSlightlyPhoneSmall 5s cubic-bezier(0.61, 1, 0.88, 1);
     background-size: 220%;
   }
 

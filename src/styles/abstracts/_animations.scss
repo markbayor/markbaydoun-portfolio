@@ -36,6 +36,16 @@
 
 @keyframes zoomBackgroundSlightly {
   0% {
+    background-size: 100%;
+  }
+
+  100% {
+    background-size: 102%;
+  }
+}
+
+@keyframes zoomBackgroundSlightlyPhone {
+  0% {
     background-size: 178%;
   }
 
@@ -44,7 +54,7 @@
   }
 }
 
-@keyframes zoomBackgroundSlightlyPhone {
+@keyframes zoomBackgroundSlightlyPhoneSmall {
   0% {
     background-size: 217%;
   }
