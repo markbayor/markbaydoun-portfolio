@@ -9,7 +9,7 @@ const Header = () => {
           Hello there.
         </h1>
         <h2 className="heading--secondary u-margin-top-big">
-          My name is Mark. I'm a <span className="span--highlight">Full Stack Software Enginner.</span>
+          My name is Mark. I'm a <span className="span--highlight">Full Stack Software Engineer.</span>
         </h2>
         <p className="heading--description u-margin-top-medium">
           I design, test and develop powerful and scalable progressive web apps, native apps, UI/UX, APIs, and more.
