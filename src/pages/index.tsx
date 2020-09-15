@@ -27,7 +27,7 @@ export default function Home() {
       <Header />
       <Navbar setShow={setShowContact} />
       <Introduction />
-      <Projects />
+      <Projects setShow={setShowContact} />
       <Technologies />
       <Education />
       {/* <Interests /> */}

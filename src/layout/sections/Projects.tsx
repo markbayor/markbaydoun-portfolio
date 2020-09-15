@@ -30,7 +30,7 @@ import {
   WebpackIcon
 } from '../../assets';
 
-const Projects = () => {
+const Projects = ({ setShow }) => {
 
   return (
     <section className="section section__projects" >
@@ -118,7 +118,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <h3 className="heading--solo">To see some of my other projects, check me out <a target="_blank" rel="noopener noreferrer" href="https://github.com/markbayor" className="a__link">on Github</a>, or <a href="#contact" className="a__link">contact me.</a></h3>
+      <h3 className="heading--solo">To see some of my other projects, check me out <a target="_blank" rel="noopener noreferrer" href="https://github.com/markbayor" className="a__link">on Github</a>, or <a href="#" className="a__link" onClick={() => setShow(true)}>contact me.</a></h3>
     </section>
   )
 }
