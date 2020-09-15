@@ -16,6 +16,10 @@
     text-align: justify;
     line-height: 2;
     letter-spacing: .6px;
+
+    @media only screen and (max-width: $bp-phone) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -34,6 +38,15 @@
 
   @media only screen and (max-width: $bp-phone) {
     flex-direction: column
+  }
+  @media only screen and (max-width: $bp-largest) {
+    align-items: center;
+  }
+
+  &--reverse {
+    @media only screen and (max-width: $bp-phone) {
+      flex-direction: column-reverse
+    }
   }
 
   &__img {
@@ -63,6 +76,9 @@
     &-paragraph {
       font-size: 1.7rem;
       text-align: justify;
+      @media only screen and (max-width: $bp-phone) {
+        font-size: 2.5rem;
+      }
     }
 
     &-techstack {
@@ -113,6 +129,9 @@
   &__item {
     font-size: 1.6rem;
     font-weight: 500;
+    @media only screen and (max-width: $bp-phone) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -175,6 +194,9 @@
 
   &__description {
     font-size: 1.8rem;
+    @media only screen and (max-width: $bp-phone) {
+      font-size: 2.4rem;
+    }
   }
 }
 

@@ -20,6 +20,10 @@
     transform: scale(1.4) translateX(-20%);
     box-shadow: 0 1.5rem 3.5rem rgba($color-grey-dark-4, .7);
     z-index: 199;
+
+    @media only screen and (max-width: $bp-phone) {
+      transform: none;
+    }
   }
 }
 
@@ -28,6 +32,10 @@
     transform: scale(1.4) translateX(20%);
     box-shadow: 0 1.5rem 3.5em rgba($color-grey-dark-4, .7);
     z-index: 199;
+
+    @media only screen and (max-width: $bp-phone) {
+      transform: none;
+    }
   }
 }
 

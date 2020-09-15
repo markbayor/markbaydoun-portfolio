@@ -4,14 +4,14 @@ const Education = () => {
 
   return (
     <section className="section section__education">
-      <h3 className='heading--tertiary' id='education'>Education</h3>
+      <h3 className='heading--tertiary'>Education</h3>
       <hr className="hr" />
       <ul className='edu__list'>
         <li className="edu__item">
           <div className="edu__img-container">
             <img src="/fullstack-logo.png" alt="Fullstack Acadademy logo" className="edu__img" />
           </div>
-          <div className="edu__item-content">
+          <div className="edu__item-content" id='education'>
             <h4 className='edu__title'>Fullstack Academy <span>New York</span><span>Jan 2020 - July 2020</span></h4>
             <div className="edu__description">
               Currently ranked the #1 Coding Bootcamp in the US. Enrolled for the Part-time Flex Program,

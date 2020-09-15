@@ -34,9 +34,9 @@ const Projects = ({ setShow }) => {
 
   return (
     <section className="section section__projects" >
-      <h3 className='heading--tertiary' id='projects'>Projects</h3>
+      <h3 className='heading--tertiary'>Projects</h3>
       <hr className="hr" />
-      <div className="projects">
+      <div className="projects" id='projects'>
         <div className="project">
           <img src="/danielorpi_web.png" alt="Daniel Orpi website sample image" className="project__img--small u-hover-scale-right" />
           <div className="project__content">
@@ -64,7 +64,7 @@ const Projects = ({ setShow }) => {
           </div>
         </div>
         <hr className="hr--small" />
-        <div className="project">
+        <div className="project project--reverse">
           <div className="project__content">
             <h4 className="heading--quaternary u-margin-bottom-small">Squadify</h4>
             <p className="project__content-paragraph">

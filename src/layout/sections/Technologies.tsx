@@ -4,9 +4,9 @@ const Technologies = () => {
 
   return (
     <section className="section technologies">
-      <h3 className='heading--tertiary' id='technologies'>Technologies</h3>
+      <h3 className='heading--tertiary'>Technologies</h3>
       <hr className="hr" />
-      <div className="tech__container">
+      <div className="tech__container" id='technologies'>
         <div className="tech__section">
           <h4 className="heading--quaternary u-no-animation">Proficient:</h4>
           <ul className="tech__list">

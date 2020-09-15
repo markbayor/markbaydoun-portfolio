@@ -85,6 +85,10 @@
       padding-right: 3rem;
       padding-left: 3rem;
       font-size: 2.5rem;
+
+      @media only screen and (max-width: $bp-phone) {
+        font-size: 3.5rem;
+      }
     }
   }
 }
