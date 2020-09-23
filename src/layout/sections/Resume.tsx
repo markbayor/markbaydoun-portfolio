@@ -10,12 +10,12 @@ const Resume = () => {
       <h4 className="heading--quaternary">To view or download my resume, use one of the three buttons below.</h4>
       <div className="resume__container" id='resume'>
         <a href='#' onClick={() => setShow(true)} className="btn btn--download">Preview here</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/u/1/uc?id=1NMf461_64txvk4STxyssX8gJKUrE3hsk&export=download" className="btn btn--download">Download</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1NMf461_64txvk4STxyssX8gJKUrE3hsk/view?usp=sharing" className="btn btn--download">View on Google Drive</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/uc?export=download&id=1oY9IS1hZghcDY5IJ--fbv3_KMU3T4fOr" className="btn btn--download">Download</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1oY9IS1hZghcDY5IJ--fbv3_KMU3T4fOr/view?usp=sharing" className="btn btn--download">View on Google Drive</a>
         {show && <div className="resume__preview--container">
           <div className="contact__bg" onClick={() => setShow(false)}>
             <div className="contact__bg" onClick={() => setShow(false)}></div>
-            <iframe className='resume__preview' src="https://drive.google.com/file/d/1NMf461_64txvk4STxyssX8gJKUrE3hsk/preview" ></iframe>
+            <iframe className='resume__preview' src="https://drive.google.com/file/d/1oY9IS1hZghcDY5IJ--fbv3_KMU3T4fOr/preview" ></iframe>
           </div>
         </div>}
       </div>
